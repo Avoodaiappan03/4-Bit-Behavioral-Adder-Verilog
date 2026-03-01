@@ -1,4 +1,4 @@
-# RCA-4bit-Verilog
+# 4-Bit-Behavioural-Adder-Verilog
 # 4-Bit Behavioral Full Adder (SystemVerilog)
 
 ## 📌 Overview
