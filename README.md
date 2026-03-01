@@ -1,22 +1,20 @@
 # RCA-4bit-Verilog
-# 4-Bit Ripple Carry Adder (RCA) Verification
+# 4-Bit Behavioral Full Adder
 
-## Project Overview
-This project involves the design and functional verification of a 4-bit Ripple Carry Adder using Verilog HDL. It was developed as part of my 4th-semester Electronics and Communication Engineering (ECE) coursework to practice RTL design and exhaustive verification methodologies.
+A hardware description project featuring a 4-bit Full Adder implemented using behavioral modeling in SystemVerilog. The project includes a comprehensive testbench that iterates through input combinations and generates waveform data for analysis.
 
-## Design Details
-- **Module**: `full_adder_4bit_bh`
-- **Methodology**: Behavioral modeling using concatenation `{cout, s}` for efficient sum and carry generation.
-- **Tools**: Developed and simulated using **Icarus Verilog 12.0** on the EDA Playground platform.
+## 📂 Project Structure
 
-## Verification Strategy
-To ensure 100% functional correctness, I implemented an exhaustive testbench:
-- **Exhaustive Stimulus**: Used nested loops to iterate through all 512 possible input combinations ($2^4 \times 2^4 \times 2^1$).
-- **Automated Monitoring**: Utilized the `$monitor` task to log every signal transition to the console for real-time debugging.
-- **Waveform Analysis**: Enabled VCD (Value Change Dump) to generate timing diagrams for visual inspection of carry propagation.
+* `design.sv`: The RTL implementation of the 4-bit full adder using an `always@(*)` block.
+* `testbench.sv`: SystemVerilog testbench that drives stimulus to the adder.
+* `dump.vcd`: Value Change Dump file containing simulation waveforms.
+* `run.sh`: Shell script used to compile and run the simulation using Icarus Verilog.
 
-## Simulation Results
-The simulation successfully passed all test cases. Below is the timing diagram showing the signals $A$, $B$, $Cin$, $Sum$, and $Cout$.
+## 🛠️ Implementation Details
+
+The adder is implemented behaviorally using the concatenation operator to handle the carry-out and sum simultaneously:
+```systemverilog
+{cout, s} = a + b + cin;
 
 ![4-Bit Adder Waveform](waveform_result.png)
 
