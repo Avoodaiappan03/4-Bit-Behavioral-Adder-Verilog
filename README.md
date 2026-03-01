@@ -23,14 +23,14 @@ The design utilizes a high-level behavioral description to perform 5-bit additio
 | `s[3:0]` | Output | 4 | [cite_start]Summation result [cite: 54] |
 | `cout` | Output | 1 | [cite_start]Final carry-out bit [cite: 54] |
 
-## 🧪 Verification Environment
+##  Verification Environment
 The testbench (`testbench.sv`) provides an exhaustive stimulus to verify the adder's functionality across various input transitions.
 
 * [cite_start]**Monitor Task:** Automatically logs signal changes to the console with timestamps[cite: 50].
 * [cite_start]**Waveform Generation:** Dumps simulation data into `dump.vcd` for visualization[cite: 51].
 * [cite_start]**Stimulus Loop:** Employs nested `repeat` blocks to iterate through 16 iterations of inputs `a` and `b`, toggling `cin` to ensure full coverage[cite: 51, 52, 53].
 
-## 🛠️ Simulation Workflow
+##  Simulation Workflow
 This project is configured for the **Icarus Verilog** toolchain.
 
 ### Prerequisites:
@@ -41,7 +41,7 @@ This project is configured for the **Icarus Verilog** toolchain.
 1. **Compile the Source:**
    ```bash
    iverilog -g2012 -o simulation.out design.sv testbench.sv
-## 🚀 How to Run (via EDA Playground)
+##  How to Run (via EDA Playground)
 
 This project is configured to run on [EDA Playground](https://edaplayground.com/) for quick verification without local installation.
 
@@ -51,7 +51,7 @@ This project is configured to run on [EDA Playground](https://edaplayground.com/
 3.  [cite_start]**Enable Waveforms:** Ensure **Open EPWave after run** is checked in the left sidebar to view the timing diagrams[cite: 12, 13, 23].
 4.  **Execute:** Click **Run** to execute the simulation. [cite_start]The console will display the `$monitor` output, and the waveform viewer will launch automatically[cite: 11, 24].
 
-## 📊 Waveform Analysis
+##  Waveform Analysis
 Below is the expected simulation waveform showing the relationship between inputs ($a, b, cin$) and outputs ($s, cout$):
 
 ![4-Bit Adder Waveform](waveform_result.png)
