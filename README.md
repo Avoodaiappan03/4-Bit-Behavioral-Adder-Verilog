@@ -54,5 +54,5 @@ This project is configured to run on [EDA Playground](https://edaplayground.com/
 ## 📊 Waveform Analysis
 Below is the expected simulation waveform showing the relationship between inputs ($a, b, cin$) and outputs ($s, cout$):
 
-![4-Bit Adder Waveform](your_image_name.png)
-![4-Bit Adder Waveform](your_image_name.png)
+![4-Bit Adder Waveform](waveform_result.png)
+
