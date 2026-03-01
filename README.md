@@ -2,7 +2,7 @@
 
 
 ##  Overview
-This repository contains a digital design implementation of a **4-bit Full Adder** using behavioral modeling in SystemVerilog. The project demonstrates a clean RTL (Register Transfer Level) approach to multi-bit addition, including a self-checking testbench that generates standard VCD (Value Change Dump) waveforms for timing analysis.
+This repository contains a digital design implementation of a **4-bit Adder** using behavioral modeling in SystemVerilog. The project demonstrates a clean RTL (Register Transfer Level) approach to multi-bit addition, including a self-checking testbench that generates standard VCD (Value Change Dump) waveforms for timing analysis.
 
 
 
