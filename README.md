@@ -1,12 +1,12 @@
 # 4-Bit-Behavioural-Adder-Verilog
 
 
-## 📌 Overview
+##  Overview
 This repository contains a digital design implementation of a **4-bit Full Adder** using behavioral modeling in SystemVerilog. The project demonstrates a clean RTL (Register Transfer Level) approach to multi-bit addition, including a self-checking testbench that generates standard VCD (Value Change Dump) waveforms for timing analysis.
 
 
 
-## 🏗️ Design Architecture
+##  Design Architecture
 The design utilizes a high-level behavioral description to perform 5-bit addition (4-bit sum + 1-bit carry). By using the concatenation operator, the carry-out logic is implicitly handled by the compiler, ensuring an optimized synthesis path.
 
 ### Specifications:
